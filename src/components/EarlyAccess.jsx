@@ -4,7 +4,7 @@ const EarlyAccess = () => {
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
 
-  const handleSubmit = (x) => {
+  const handleSubmit = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!emailRegex.test(email)) {
@@ -30,8 +30,9 @@ const EarlyAccess = () => {
         <div className="w-full flex flex-col gap-1 ">
           <input
             value={email}
-            onChange={(x) => {
-              (setEmail(x.target.value), setError(""));
+            onChange={(event) => {
+              setEmail(event.target.value);
+              setError("");
             }}
             type="text"
             placeholder="email@example.com"

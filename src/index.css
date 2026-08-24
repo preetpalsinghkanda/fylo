@@ -1,11 +1,61 @@
 @import "tailwindcss";
 
+:root {
+  color-scheme: dark;
+  background: hsl(219 30% 18%);
+}
+
 * {
   box-sizing: border-box;
 }
 
+html,
 body {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
+  margin: 0;
+  background: hsl(219 30% 18%);
   font-family: "Raleway", sans-serif;
+}
+
+body {
+  min-width: 320px;
+}
+
+#root {
+  min-height: 100vh;
+  background: hsl(219 30% 18%);
+}
+
+.app-error {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 2rem;
+  color: white;
+}
+
+.app-error__panel {
+  max-width: 30rem;
+  padding: 2.5rem;
+  border: 1px solid rgb(255 255 255 / 12%);
+  border-radius: 1rem;
+  background: hsl(218 28% 13%);
+  text-align: center;
+  box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 30%);
+}
+
+.app-error__panel img {
+  width: 3rem;
+  margin: 0 auto 1.25rem;
+}
+
+.app-error__panel h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+}
+
+.app-error__panel p {
+  margin: 0;
+  color: rgb(255 255 255 / 72%);
 }
