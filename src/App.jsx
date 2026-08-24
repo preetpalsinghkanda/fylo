@@ -5,6 +5,7 @@ import Features from "./components/Features";
 import Productive from "./components/Productive";
 import Feedback from "./components/Feedback";
 import quotes from "./assets/bg-quotes.png";
+import EarlyAccess from "./components/EarlyAccess";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Productive />
           <img className="relative top-7 -left-2 z-50" src={quotes} alt="" />
           <Feedback />
+          <EarlyAccess/>
         </div>
       </div>
     </div>
