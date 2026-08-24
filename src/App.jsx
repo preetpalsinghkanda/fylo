@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
 import Productive from "./components/Productive";
+import Feedback from "./components/Feedback";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <div className="max-w-7xl w-full mx-auto">
           <Features />
           <Productive />
+          <Feedback/>
         </div>
       </div>
     </div>
