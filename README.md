@@ -4,7 +4,7 @@ a dark theme landing page built with React and Tailwind CSS.The project focused 
 
 ## Live URL
 
-``
+`https://fylo-eight-mu.vercel.app/`
 
 
 ## Tech Stack
@@ -23,5 +23,14 @@ a dark theme landing page built with React and Tailwind CSS.The project focused 
 - Hover states for interative elements
 - Social media icons by font awesome
 - Fast and lightweight 
+
+## Preview
+
+<img width="1723" height="952" alt="image" src="https://github.com/user-attachments/assets/7a23e08e-fd95-4d68-909a-5c439c496ad6" />
+
+
+##
+
+> Made by Preet with Love
 
 
