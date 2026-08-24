@@ -1,6 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 
 const EarlyAccess = () => {
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
+
+  const handleSubmit = (x) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(email)) {
+      setError("Please enter a valid email address");
+    } else {
+      setError("");
+    }
+  };
+
   return (
     <div
       style={{ boxShadow: "0px 2px 30px #0000004d" }}
@@ -14,12 +27,24 @@ const EarlyAccess = () => {
       </p>
 
       <div className="flex  my-1.5 gap-10 w-full ">
-        <input
-          type="text"
-          placeholder="email@example.com"
-          className="bg-white focus:outline-0 px-10 border-0 w-full rounded-full "
-        />
-        <button className="text-white whitespace-nowrap px-10 py-3 font-[600] rounded-full bg-[#43B1D2]">
+        <div className="w-full flex flex-col gap-1 ">
+          <input
+            value={email}
+            onChange={(x) => {
+              (setEmail(x.target.value), setError(""));
+            }}
+            type="text"
+            placeholder="email@example.com"
+            className="bg-white focus:outline-0 py-3 px-10 border-0 w-full rounded-full "
+          />
+          {error && (
+            <p className="text-[12px]  pl-8 text-[hsl(0,100%,63%)] ">{error}</p>
+          )}
+        </div>
+        <button
+          onClick={() => handleSubmit()}
+          className="text-white self-start whitespace-nowrap hover:bg-[hsl(176,68%,64%)] cursor-pointer px-10 py-3 font-[600] rounded-full bg-[#43B1D2]"
+        >
           Get Started for free
         </button>
       </div>

@@ -13,7 +13,7 @@ import {
 const Footer = () => {
   return (
     <div className="  pt-50 gap-10 flex flex-col items-start pb-20">
-      <img src={logo} alt="" />
+      <img src={logo} className="h-10" alt="" />
       <div className=" w-full justify-between flex gap-40">
         <div className="flex gap-20 justify-between">
           <p className="flex gap-7 max-w-sm text-start items-start text-xl text-[#ffffffbc]">
@@ -36,26 +36,26 @@ const Footer = () => {
         <div className="flex gap-30">
           <div className="flex gap-16 text-[#ffffffbc]">
             <div className="flex flex-col gap-4">
-              <span>About Us</span>
-              <span>Jobs</span>
-              <span>Press</span>
-              <span>Blog</span>
+              <span className="hover:text-[white] cursor-pointer">About Us</span>
+              <span className="hover:text-[white] cursor-pointer">Jobs</span>
+              <span className="hover:text-[white] cursor-pointer">Press</span>
+              <span className="hover:text-[white] cursor-pointer">Blog</span>
             </div>
             <div className="flex flex-col gap-4">
-              <span>Contact Us</span>
-              <span>Terms</span>
-              <span>Privacy</span>
+              <span className="hover:text-[white] cursor-pointer">Contact Us</span>
+              <span className="hover:text-white cursor-pointer">Terms</span>
+              <span className="hover:text-white cursor-pointer">Privacy</span>
             </div>
           </div>
           <div className="flex gap-3 items-start ">
-            <span className="rounded-full cursor-pointer flex items-center justify-center border border-white  w-8 h-8">
-              <FontAwesomeIcon style={{ color: "white" }} icon={faFacebookF} />
+            <span className="rounded-full text-white hover:text-[hsl(176,68%,64%)] cursor-pointer hover:border-[hsl(176,68%,64%)] flex items-center justify-center border border-white  w-8 h-8">
+              <FontAwesomeIcon   icon={faFacebookF} />
             </span>
-            <span className="rounded-full cursor-pointer flex items-center justify-center border border-white w-8 h-8 ">
-              <FontAwesomeIcon style={{ color: "white" }} icon={faTwitter} />
+            <span className="rounded-full cursor-pointer text-white hover:text-[hsl(176,68%,64%)] hover:border-[hsl(176,68%,64%)] flex items-center justify-center border border-white w-8 h-8 ">
+              <FontAwesomeIcon  icon={faTwitter} />
             </span>
-            <span className="rounded-full w-8 cursor-pointer h-8 flex items-center justify-center border-white border ">
-              <FontAwesomeIcon style={{ color: "white" }} icon={faInstagram} />
+            <span className="rounded-full w-8 text-white hover:border-[hsl(176,68%,64%)] hover:text-[hsl(176,68%,64%)] cursor-pointer h-8 flex items-center justify-center border-white border ">
+              <FontAwesomeIcon  icon={faInstagram} />
             </span>
           </div>
         </div>

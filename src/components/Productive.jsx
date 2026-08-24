@@ -20,11 +20,11 @@ const Productive = () => {
             for live collaboration. No email attachments required.
           </p>
         </div>
-        <span className="flex items-center gap-2 border-b-1 pb-1 border-[hsl(176,68%,64%)] w-fit">
-          <a href="" className="text-[hsl(176,68%,64%)]">
+        <span className="flex items-center hover:text-white hover:border-white text-[hsl(176,68%,64%)]  gap-2 border-b-1 pb-1 border-[hsl(176,68%,64%)] w-fit">
+          <a href="" className="">
             See how Fylo works
           </a>
-          <img src={arrow} alt="" />
+          <img src={arrow}  alt="" />
         </span>
       </div>
     </div>

@@ -1,16 +1,27 @@
-# React + Vite
+# Fylo dark theme landing page
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+a dark theme landing page built with React and Tailwind CSS.The project focused on creating a clean, modern UI with a simple and user friendly design.
 
-Currently, two official plugins are available:
+## Live URL
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+``
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the Oxlint configuration
+- HTML
+- CSS
+- React js
+- Tailwind CSSP
+- Font Awesome Icon
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+
+## Features
+
+- Design for Desktop
+- Clean and Modern UI (Dark Theme)
+- Hover states for interative elements
+- Social media icons by font awesome
+- Fast and lightweight 
+
+

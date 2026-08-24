@@ -22,7 +22,7 @@ const Hero = () => {
           </span>{" "}
           friends family, and co-workers.
         </p>
-        <button className="bg-[hsl(198,60%,50%)] z-10 self-center text-[20px] text-white font-[500] rounded-full px-20 py-2">
+        <button className="bg-[hsl(198,60%,50%)] cursor-pointer hover:bg-[hsl(176,68%,64%)] z-10 self-center text-[20px] text-white font-[600] rounded-full px-20 py-2">
           Get Started
         </button>
         <img
