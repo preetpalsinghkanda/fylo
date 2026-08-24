@@ -6,6 +6,7 @@ import Productive from "./components/Productive";
 import Feedback from "./components/Feedback";
 import quotes from "./assets/bg-quotes.png";
 import EarlyAccess from "./components/EarlyAccess";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -23,7 +24,13 @@ const App = () => {
           <Productive />
           <img className="relative top-7 -left-2 z-50" src={quotes} alt="" />
           <Feedback />
-          <EarlyAccess/>
+          <EarlyAccess />
+        </div>
+      </div>
+
+      <div className="w-full bg-[#0C1524]">
+        <div className="max-w-7xl w-full mx-auto">
+          <Footer />
         </div>
       </div>
     </div>
