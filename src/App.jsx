@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Features from "./components/Features";
 import Productive from "./components/Productive";
 import Feedback from "./components/Feedback";
+import quotes from "./assets/bg-quotes.png";
 
 const App = () => {
   return (
@@ -19,7 +20,8 @@ const App = () => {
         <div className="max-w-7xl w-full mx-auto">
           <Features />
           <Productive />
-          <Feedback/>
+          <img className="relative top-7 -left-2 z-50" src={quotes} alt="" />
+          <Feedback />
         </div>
       </div>
     </div>
