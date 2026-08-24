@@ -36,27 +36,40 @@ const Footer = () => {
         <div className="flex gap-30">
           <div className="flex gap-16 text-[#ffffffbc]">
             <div className="flex flex-col gap-4">
-              <span className="hover:text-[white] cursor-pointer">About Us</span>
+              <span className="hover:text-[white] cursor-pointer">
+                About Us
+              </span>
               <span className="hover:text-[white] cursor-pointer">Jobs</span>
               <span className="hover:text-[white] cursor-pointer">Press</span>
               <span className="hover:text-[white] cursor-pointer">Blog</span>
             </div>
             <div className="flex flex-col gap-4">
-              <span className="hover:text-[white] cursor-pointer">Contact Us</span>
+              <span className="hover:text-[white] cursor-pointer">
+                Contact Us
+              </span>
               <span className="hover:text-white cursor-pointer">Terms</span>
               <span className="hover:text-white cursor-pointer">Privacy</span>
             </div>
           </div>
           <div className="flex gap-3 items-start ">
-            <span className="rounded-full text-white hover:text-[hsl(176,68%,64%)] cursor-pointer hover:border-[hsl(176,68%,64%)] flex items-center justify-center border border-white  w-8 h-8">
-              <FontAwesomeIcon   icon={faFacebookF} />
-            </span>
-            <span className="rounded-full cursor-pointer text-white hover:text-[hsl(176,68%,64%)] hover:border-[hsl(176,68%,64%)] flex items-center justify-center border border-white w-8 h-8 ">
-              <FontAwesomeIcon  icon={faTwitter} />
-            </span>
-            <span className="rounded-full w-8 text-white hover:border-[hsl(176,68%,64%)] hover:text-[hsl(176,68%,64%)] cursor-pointer h-8 flex items-center justify-center border-white border ">
-              <FontAwesomeIcon  icon={faInstagram} />
-            </span>
+            <a
+              href="https://facebook.com/"
+              className="rounded-full text-white hover:text-[hsl(176,68%,64%)] cursor-pointer hover:border-[hsl(176,68%,64%)] flex items-center justify-center border border-white  w-8 h-8"
+            >
+              <FontAwesomeIcon icon={faFacebookF} />
+            </a>
+            <a
+              href="https://x.com/"
+              className="rounded-full cursor-pointer text-white hover:text-[hsl(176,68%,64%)] hover:border-[hsl(176,68%,64%)] flex items-center justify-center border border-white w-8 h-8 "
+            >
+              <FontAwesomeIcon icon={faTwitter} />
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              className="rounded-full w-8 text-white hover:border-[hsl(176,68%,64%)] hover:text-[hsl(176,68%,64%)] cursor-pointer h-8 flex items-center justify-center border-white border "
+            >
+              <FontAwesomeIcon icon={faInstagram} />
+            </a>
           </div>
         </div>
       </div>
